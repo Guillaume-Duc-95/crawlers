@@ -19,6 +19,7 @@ google-auth==1.12.0
 google-auth-httplib2==0.0.3
 google-auth-oauthlib==0.4.1
 googleapis-common-protos==1.51.0
+googletrans==2.4.0
 httplib2==0.17.0
 hyperlink==19.0.0
 idna==2.9
@@ -75,6 +76,7 @@ Scrapy==2.0.1
 Send2Trash==1.5.0
 service-identity==18.1.0
 six==1.14.0
+spacy==2.2.4
 terminado==0.8.3
 testpath==0.4.4
 tornado==6.0.4
