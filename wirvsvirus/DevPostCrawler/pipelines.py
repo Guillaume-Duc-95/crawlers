@@ -28,10 +28,11 @@ class DevPostCrawlerPipeline(object):
 
         # Detect the subtitle language and translate it to english
         subtitle = item['subtitle'][0]
-        translation = self.lp.get_language(subtitle)
-        dict_item['language'] = translation[1]
+        language = self.lp.get_language(subtitle)
+        dict_item['language'] = language
+
         if dict_item['language'] != 'english':
-            dict_item['enSubtitle'] = translation[0]
+            dict_item['enSubtitle'] = self.lp.ggl_translate(subtitle)[0]
         else:
             dict_item['enSubtitle'] = ''
 
